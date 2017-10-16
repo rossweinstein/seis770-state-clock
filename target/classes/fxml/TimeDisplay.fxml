@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="clock.controllers.ClockTimeDisplay" alignment="CENTER"
+          styleClass="clockDisplay" hgap="10" vgap="10">
+    <padding><Insets top="25" bottom="25" /></padding>
+
+    <!-- Displays the hour [hh] -->
+    <Text styleClass="time" fx:id="hours" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <!-- Displays a colon [:] -->
+    <Text styleClass="time" text=":" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <!-- Displays the minute [mm] -->
+    <Text styleClass="time" fx:id="minutes" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+    <!-- Displays a colon [:] -->
+    <Text styleClass="time" text=":" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+    <!-- Displays the seconds [s] -->
+    <Text styleClass="time" fx:id="seconds" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+</GridPane>
