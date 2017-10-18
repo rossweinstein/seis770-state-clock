@@ -12,7 +12,7 @@ public class SecondsEditState implements EditClockState {
 
     @Override
     public void nextClockEditState() {
-        this.clock.setClockState(this.clock.getHoursEditState());
+        this.clock.setClockState(new HoursEditState(clock));
     }
 
     @Override

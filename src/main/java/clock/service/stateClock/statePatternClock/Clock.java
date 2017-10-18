@@ -105,12 +105,14 @@ public abstract class Clock extends TimerTask {
                 incrementSecond();
                 refreshClock();
             }
-        }, 0, 1000);
+        }, 1000, 1000);
     }
 
     public void pause() {
-        this.timer.cancel();
-        this.clockIsRunning = false;
+        if (this.clockIsRunning) {
+            this.timer.cancel();
+            this.clockIsRunning = false;
+        }
     }
 
     public boolean isClockRunning() {

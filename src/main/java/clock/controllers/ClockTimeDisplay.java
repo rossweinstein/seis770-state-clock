@@ -1,16 +1,11 @@
 package clock.controllers;
 
-import clock.service.stateClock.clockStates.EditClockState;
-import clock.service.stateClock.clockStates.HoursEditState;
-import clock.service.stateClock.clockStates.MinutesEditState;
-import clock.service.stateClock.clockStates.SecondsEditState;
 import clock.service.stateClock.statePatternClock.ProgrammableClock;
 import clock.service.stateClock.statePatternClock.StateClock;
 import io.reactivex.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.converter.NumberStringConverter;
 
@@ -25,21 +20,24 @@ public class ClockTimeDisplay implements Initializable {
     @FXML private Text seconds;
 
     private StateClock clock;
-    private Observable<EditClockState> changingClockState;
+    private Observable<String> changingClockState;
 
     public ClockTimeDisplay() {
         this.clock = ProgrammableClock.getClock();
         this.clock.run();
     }
 
-    private void highlightCurrentEditMode(EditClockState editState) {
-
+    private void highlightCurrentEditMode(String editState) {
         this.removedAllHighlighted();
-        if (editState instanceof HoursEditState) {
+        this.applyHighlightToCurrentActiveEditDigit(editState);
+    }
+
+    private void applyHighlightToCurrentActiveEditDigit(String editState) {
+        if (editState.equals("HoursEditState")) {
             this.hours.getStyleClass().add("selected");
-        } else if (editState instanceof MinutesEditState) {
+        } else if (editState.equals("MinutesEditState")) {
             this.minutes.getStyleClass().add("selected");
-        } else if (editState instanceof SecondsEditState){
+        } else if (editState.equals("SecondsEditState")){
             this.seconds.getStyleClass().add("selected");
         }
     }
@@ -65,8 +63,8 @@ public class ClockTimeDisplay implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         bindDisplayToStateClock();
         this.changingClockState = this.clock.stateChange();
-        this.changingClockState.subscribe( (editClockState) -> {
-            this.highlightCurrentEditMode(editClockState);
-        });
+        this.changingClockState.subscribe( (editClockState) ->
+            this.highlightCurrentEditMode(editClockState)
+        );
     }
 }

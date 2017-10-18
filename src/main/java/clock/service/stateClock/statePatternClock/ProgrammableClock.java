@@ -10,48 +10,27 @@ public class ProgrammableClock extends Clock implements StateClock {
 
     private static StateClock clock = new ProgrammableClock();
 
-    private EditClockState noEditState;
-    private EditClockState hoursEditState;
-    private EditClockState minutesEditState;
-    private EditClockState secondsEditState;
     private EditClockState clockState;
-    private PublishSubject<EditClockState> stateHasChanged;
+    private PublishSubject<String> stateChangeObserver;
 
     private ProgrammableClock() {
         super(LocalTime.now());
-        this.noEditState = new NoEditState(this);
-        this.hoursEditState = new HoursEditState(this);
-        this.minutesEditState = new MinutesEditState(this);
-        this.secondsEditState = new SecondsEditState(this);
-        this.clockState = this.noEditState;
-
-        this.stateHasChanged = PublishSubject.create();
+        this.clockState = new NoEditState(this);
+        this.stateChangeObserver = PublishSubject.create();
     }
 
     public static StateClock getClock() {
         return clock;
     }
 
-    public EditClockState getHoursEditState() {
-        return hoursEditState;
-    }
-
-    public EditClockState getMinutesEditState() {
-        return minutesEditState;
-    }
-
-    public EditClockState getSecondsEditState() {
-        return secondsEditState;
-    }
-
-    public Observable<EditClockState> stateChange() {
-        return this.stateHasChanged;
+    public Observable<String> stateChange() {
+        return this.stateChangeObserver;
     }
 
     @Override
     public void nextClockEditState() {
         this.clockState.nextClockEditState();
-        this.stateHasChanged.onNext(this.getClockState());
+       this.sendStateChangeNotice();
     }
 
     @Override
@@ -76,13 +55,22 @@ public class ProgrammableClock extends Clock implements StateClock {
 
     @Override
     public void resetToNoEditClockEditState() {
-
-        this.clockState = this.noEditState;
-        this.stateHasChanged.onNext(this.getClockState());
+        this.clockState = new NoEditState(this);
+        this.sendStateChangeNotice();
     }
 
     @Override
     public void setClockToHoursEditState() {
-        this.clockState = this.hoursEditState;
+        this.clockState = new HoursEditState(this);
+        this.sendStateChangeNotice();
+    }
+
+    private void sendStateChangeNotice() {
+        this.stateChangeObserver.onNext(this.getClockStateName());
+    }
+
+    private String getClockStateName() {
+        String[] clockStateStringParts = this.getClockState().toString().split("\\.");
+        return clockStateStringParts[4].split("@")[0];
     }
 }

@@ -16,5 +16,5 @@ public interface StateClock extends EditClockState {
     void run();
     void pause();
     boolean isClockRunning();
-    Observable<EditClockState> stateChange();
+    Observable<String> stateChange();
 }

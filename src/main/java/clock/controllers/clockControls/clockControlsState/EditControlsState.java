@@ -1,7 +1,9 @@
 package clock.controllers.clockControls.clockControlsState;
 
 import clock.controllers.clockControls.ClockControls;
-import clock.service.stateClock.clockStates.SecondsEditState;
+import clock.controllers.clockControls.clockControlButtons.clockStateChangeButtons.ChangeClockEditStateBtn;
+import clock.controllers.clockControls.clockControlButtons.incrementDecrementTimeButtons.IncrementDecrementTimeBtnHBox;
+import clock.controllers.clockControls.clockControlButtons.toggleControlsStateButtons.ReturnToNoEditStateBtn;
 import clock.service.stateClock.statePatternClock.ProgrammableClock;
 import clock.service.stateClock.statePatternClock.StateClock;
 import javafx.scene.Node;
@@ -15,10 +17,7 @@ public class EditControlsState implements ClockControlsState{
 
     private Button changeClockEditStateBtn;
     private Button returnToNoEditStateBtn;
-
     private HBox incrementDecrementTimeBtnHBox;
-    private Button incrementTimeBtn;
-    private Button decrementTimeBtn;
 
     private ClockControls clockControls;
     private StateClock clock;
@@ -40,77 +39,8 @@ public class EditControlsState implements ClockControlsState{
     }
 
     private void setUpAllButtons() {
-        this.setUpChangeClockEditStateBtn();
-        this.setUpReturnToNoEditStateBtn();
-        this.setUpIncrementDecrementTimeHBox();
-    }
-
-    private void setUpChangeClockEditStateBtn() {
-        this.changeClockEditStateBtn = new Button("Edit Hours");
-        this.changeClockEditStateBtn.getStyleClass().add("editButton");
-        this.changeClockEditStateBtn.setStyle("-fx-text-fill: yellow;");
-        this.changeClockEditStateBtn.setOnAction( (event) -> {
-            this.makeSureClockIsRunning();
-            this.clock.nextClockEditState();
-            this.updateChangeClockEditStateBtnText();
-        });
-    }
-
-    private void updateChangeClockEditStateBtnText() {
-        if (this.changeClockEditStateBtn.textProperty().get().equals("Edit Hours")) {
-            this.changeClockEditStateBtn.setText(" Edit Min ");
-        } else if (this.changeClockEditStateBtn.textProperty().get().equals(" Edit Min ")) {
-            this.changeClockEditStateBtn.setText(" Edit Sec ");
-        } else {
-            this.changeClockEditStateBtn.setText("Edit Hours");
-        }
-    }
-
-    private void setUpReturnToNoEditStateBtn() {
-        this.returnToNoEditStateBtn = new Button(" End ");
-        this.returnToNoEditStateBtn.getStyleClass().add("editButton");
-        this.returnToNoEditStateBtn.setOnAction( (event) -> {
-            this.makeSureClockIsRunning();
-            this.clock.resetToNoEditClockEditState();
-            this.changeClockEditStateBtn.setText("Edit Hours");
-            this.toggleClockControlState();
-        });
-    }
-
-    private Button setUpIncrementTimeBtn() {
-        this.incrementTimeBtn = new Button("+");
-        this.incrementTimeBtn.getStyleClass().add("editButton");
-        this.incrementTimeBtn.setOnAction( (event) -> {
-            this.pauseIfEditingSeconds();
-            this.clock.incrementTime();
-        });
-        return this.incrementTimeBtn;
-    }
-
-    private Button setUpDecrementTimeBtn() {
-        this.decrementTimeBtn = new Button("-");
-        this.decrementTimeBtn.getStyleClass().add("editButton");
-        this.decrementTimeBtn.setOnAction( (event) -> {
-            this.pauseIfEditingSeconds();
-            this.clock.decrementTime();
-        });
-        return this.decrementTimeBtn;
-    }
-
-    private void setUpIncrementDecrementTimeHBox() {
-        this.incrementDecrementTimeBtnHBox = new HBox();
-        incrementDecrementTimeBtnHBox.getChildren().addAll(this.setUpDecrementTimeBtn(), this.setUpIncrementTimeBtn());
-    }
-
-    private void pauseIfEditingSeconds() {
-        if (this.clock.getClockState() instanceof SecondsEditState) {
-            this.clock.pause();
-        }
-    }
-
-    private void makeSureClockIsRunning() {
-        if (!this.clock.isClockRunning()) {
-            this.clock.run();
-        }
+        this.changeClockEditStateBtn = new ChangeClockEditStateBtn();
+        this.returnToNoEditStateBtn = new ReturnToNoEditStateBtn(this);
+        this.incrementDecrementTimeBtnHBox = new IncrementDecrementTimeBtnHBox();
     }
 }
