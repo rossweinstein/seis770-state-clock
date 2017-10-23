@@ -1,9 +1,9 @@
 package clock.controllers.clockControls.clockControlsState;
 
 import clock.controllers.clockControls.ClockControls;
-import clock.controllers.clockControls.clockControlButtons.toggleControlsStateButtons.BeginEditingClockBtn;
-import clock.service.stateClock.statePatternClock.ProgrammableClock;
-import clock.service.stateClock.statePatternClock.StateClock;
+import clock.UIElements.Button.toggleControlsState.BeginEditingClockBtn;
+import clock.model.stateClock.statePatternClock.ProgrammableClock;
+import clock.model.stateClock.statePatternClock.StateClock;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 

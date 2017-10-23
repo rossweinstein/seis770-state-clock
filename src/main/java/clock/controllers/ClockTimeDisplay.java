@@ -1,7 +1,7 @@
 package clock.controllers;
 
-import clock.service.stateClock.statePatternClock.ProgrammableClock;
-import clock.service.stateClock.statePatternClock.StateClock;
+import clock.model.stateClock.statePatternClock.ProgrammableClock;
+import clock.model.stateClock.statePatternClock.StateClock;
 import io.reactivex.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;

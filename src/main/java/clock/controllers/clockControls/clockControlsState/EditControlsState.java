@@ -1,11 +1,11 @@
 package clock.controllers.clockControls.clockControlsState;
 
 import clock.controllers.clockControls.ClockControls;
-import clock.controllers.clockControls.clockControlButtons.clockStateChangeButtons.ChangeClockEditStateBtn;
-import clock.controllers.clockControls.clockControlButtons.incrementDecrementTimeButtons.IncrementDecrementTimeBtnHBox;
-import clock.controllers.clockControls.clockControlButtons.toggleControlsStateButtons.ReturnToNoEditStateBtn;
-import clock.service.stateClock.statePatternClock.ProgrammableClock;
-import clock.service.stateClock.statePatternClock.StateClock;
+import clock.UIElements.Button.changeClockState.ChangeClockEditStateBtn;
+import clock.UIElements.HBox.IncrementDecrementTimeBtnHBox;
+import clock.UIElements.Button.toggleControlsState.ReturnToNoEditStateBtn;
+import clock.model.stateClock.statePatternClock.ProgrammableClock;
+import clock.model.stateClock.statePatternClock.StateClock;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
