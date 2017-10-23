@@ -10,6 +10,11 @@ import javafx.scene.control.Button;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public class NoEditControlsState implements ClockControlsState {
 
     private Button beginEditingClockBtn;

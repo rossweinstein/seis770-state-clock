@@ -2,6 +2,10 @@ package clock.UIElements.Button.incrementDecrementTime;
 
 import clock.UIElements.Button.abstractButtons.IncrementDecrementButton;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
 
 public class DecrementTimeBtn extends IncrementDecrementButton {
 

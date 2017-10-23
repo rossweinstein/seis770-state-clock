@@ -2,6 +2,11 @@ package clock.UIElements.Button.changeClockState;
 
 import clock.UIElements.Button.abstractButtons.ClockStateEditButton;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public class ChangeClockEditStateBtn extends ClockStateEditButton {
 
     private String buttonText = "Edit Hours";

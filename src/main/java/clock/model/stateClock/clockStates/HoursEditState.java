@@ -3,6 +3,11 @@ package clock.model.stateClock.clockStates;
 
 import clock.model.stateClock.statePatternClock.ProgrammableClock;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public class HoursEditState implements EditClockState {
 
     private ProgrammableClock clock;

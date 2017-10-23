@@ -6,6 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public class StateClockAppMain extends Application {
 
     @Override

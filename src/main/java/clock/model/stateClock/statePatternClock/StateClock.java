@@ -4,6 +4,11 @@ import clock.model.stateClock.clockStates.EditClockState;
 import io.reactivex.Observable;
 import javafx.beans.property.IntegerProperty;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public interface StateClock extends EditClockState {
 
     EditClockState getClockState();

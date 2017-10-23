@@ -7,6 +7,11 @@ import java.time.LocalTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public abstract class Clock extends TimerTask {
 
     private IntegerProperty hours;

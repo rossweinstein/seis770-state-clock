@@ -13,6 +13,11 @@ import javafx.scene.layout.HBox;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
+
 public class EditControlsState implements ClockControlsState{
 
     private Button changeClockEditStateBtn;

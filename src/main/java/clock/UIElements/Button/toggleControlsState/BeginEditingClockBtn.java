@@ -3,6 +3,10 @@ package clock.UIElements.Button.toggleControlsState;
 import clock.UIElements.Button.abstractButtons.ClockControlButton;
 import clock.controllers.clockControls.clockControlsState.ClockControlsState;
 
+/**
+ * SEIS 770 – Object Oriented Patterns & Architecture
+ * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ */
 
 public class BeginEditingClockBtn extends ClockControlButton {
 
