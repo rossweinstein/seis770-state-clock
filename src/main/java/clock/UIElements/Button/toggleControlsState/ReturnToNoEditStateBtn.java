@@ -17,7 +17,6 @@ public class ReturnToNoEditStateBtn extends ClockStateEditButton {
         this.setOnAction((event) -> {
             this.makeSureClockIsRunning();
             this.clock.resetToNoEditClockEditState();
-            this.setText("Edit Hours");
             this.clockControlsState.toggleClockControlState();
         });
     }

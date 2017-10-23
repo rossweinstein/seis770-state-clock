@@ -3,9 +3,7 @@ package clock.UIElements.Button.toggleControlsState;
 import clock.UIElements.Button.abstractButtons.ClockControlButton;
 import clock.controllers.clockControls.clockControlsState.ClockControlsState;
 
-/**
- * Created by Pamela on 10/17/17.
- */
+
 public class BeginEditingClockBtn extends ClockControlButton {
 
     private ClockControlsState clockControlsState;

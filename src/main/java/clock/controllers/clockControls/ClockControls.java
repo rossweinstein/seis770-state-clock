@@ -22,14 +22,6 @@ public class ClockControls implements Initializable {
         this.editState = new EditControlsState(this);
     }
 
-    public ClockControlsState getNoEditState() {
-        return noEditState;
-    }
-
-    public ClockControlsState getEditState() {
-        return editState;
-    }
-
     public void setClockControlsEditState(ClockControlsState nextClockControlsState) {
         this.clockControls.getChildren().clear();
         this.clockControls.getChildren().addAll(nextClockControlsState.getAllChildren());

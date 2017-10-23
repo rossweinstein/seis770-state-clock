@@ -30,7 +30,7 @@ public class EditControlsState implements ClockControlsState{
 
     @Override
     public void toggleClockControlState() {
-        this.clockControls.setClockControlsEditState(this.clockControls.getNoEditState());
+        this.clockControls.setClockControlsEditState(new NoEditControlsState(this.clockControls));
     }
 
     @Override
