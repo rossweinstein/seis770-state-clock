@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30aecf22-6fe4-4b2b-b7ea-1a030bfc517a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/clock/controllers/ClockTimeDisplay.class" afterPath="$PROJECT_DIR$/target/classes/clock/controllers/ClockTimeDisplay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/ClockControls.class" afterPath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/ClockControls.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/clockControlsState/EditControlsState.class" afterPath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/clockControlsState/EditControlsState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/clockControlsState/NoEditControlsState.class" afterPath="$PROJECT_DIR$/target/classes/clock/controllers/clockControls/clockControlsState/NoEditControlsState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/ClockControlButton.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/ClockControlButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/ClockStateEditButton.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/ClockStateEditButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/IncrementDecrementButton.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/IncrementDecrementButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/changeClockState/ChangeClockEditStateBtn.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/changeClockState/ChangeClockEditStateBtn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/incrementDecrementTime/DecrementTimeBtn.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/incrementDecrementTime/DecrementTimeBtn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/incrementDecrementTime/IncrementTimeBtn.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/incrementDecrementTime/IncrementTimeBtn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/toggleControlsState/BeginEditingClockBtn.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/toggleControlsState/BeginEditingClockBtn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/toggleControlsState/ReturnToNoEditStateBtn.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/Button/toggleControlsState/ReturnToNoEditStateBtn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/UIElements/HBox/IncrementDecrementTimeBtnHBox.java" afterPath="$PROJECT_DIR$/src/main/java/clock/UIElements/HBox/IncrementDecrementTimeBtnHBox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/controllers/ClockTimeDisplay.java" afterPath="$PROJECT_DIR$/src/main/java/clock/controllers/ClockTimeDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/ClockControls.java" afterPath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/ClockControls.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/ClockControlsState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/ClockControlsState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/EditControlsState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/EditControlsState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/NoEditControlsState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/NoEditControlsState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/EditClockState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/EditClockState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/HoursEditState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/HoursEditState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/MinutesEditState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/MinutesEditState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/NoEditState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/NoEditState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/SecondsEditState.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/clockStates/SecondsEditState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/Clock.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/Clock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/ProgrammableClock.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/ProgrammableClock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/StateClock.java" afterPath="$PROJECT_DIR$/src/main/java/clock/model/stateClock/statePatternClock/StateClock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/clockAppMain/StateClockAppMain.java" afterPath="$PROJECT_DIR$/src/main/java/clockAppMain/StateClockAppMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StateClockAppMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StateClockAppMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/clockAppMain/StateClockAppMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -99,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClockControlButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/clock/UIElements/Button/abstractButtons/ClockControlButton.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="347">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1247,7 +1229,7 @@
       <workItem from="1508330272834" duration="1242000" />
       <workItem from="1508538824259" duration="7000" />
       <workItem from="1508761010302" duration="1734000" />
-      <workItem from="1508773266114" duration="1008000" />
+      <workItem from="1508773266114" duration="1569000" />
     </task>
     <task id="LOCAL-00001" summary="small bug fix">
       <created>1508773837678</created>
@@ -1263,11 +1245,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508774132967</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed typo">
+      <created>1508774289431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508774289431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34678000" />
+    <option name="totallyTimeSpent" value="35239000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1323,7 +1312,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="small bug fix" />
     <MESSAGE value="added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
+    <MESSAGE value="fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1491,14 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clock/controllers/clockControls/clockControlsState/ClockControlsState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1536,7 +1518,7 @@
         <state relative-caret-position="342">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1681,6 +1663,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>

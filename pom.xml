@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.masterJoop</groupId>
-    <artifactId>State Pattern Clock</artifactId>
+    <artifactId>state-pattern-clock</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -14,13 +14,11 @@
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjava</artifactId>
             <version>2.1.5</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjavafx</artifactId>
             <version>2.2.0</version>
-              <scope>compile</scope>
         </dependency>
     </dependencies>
     <properties>
