@@ -19,12 +19,10 @@ public class ClockControls implements Initializable {
 
     @FXML
     private HBox clockControls;
-    private ClockControlsState noEditState;
-    private ClockControlsState editState;
+    private ClockControlsState controlsEditState;
 
     public ClockControls() {
-        this.noEditState = new NoEditControlsState(this);
-        this.editState = new EditControlsState(this);
+        this.controlsEditState = new NoEditControlsState(this);
     }
 
     public void setClockControlsEditState(ClockControlsState nextClockControlsState) {
@@ -34,6 +32,6 @@ public class ClockControls implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        this.clockControls.getChildren().addAll(this.noEditState.getAllChildren());
+        this.clockControls.getChildren().addAll(this.controlsEditState.getAllChildren());
     }
 }
