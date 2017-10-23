@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
 
 /**
  * SEIS 770 – Object Oriented Patterns & Architecture
- * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ * State Pattern Clock: Heather Mortensen | Ross Weinstein
  */
 
 public class ClockControls implements Initializable {

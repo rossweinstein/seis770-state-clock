@@ -9,7 +9,7 @@ import java.util.TimerTask;
 
 /**
  * SEIS 770 – Object Oriented Patterns & Architecture
- * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ * State Pattern Clock: Heather Mortensen | Ross Weinstein
  */
 
 public abstract class Clock extends TimerTask {

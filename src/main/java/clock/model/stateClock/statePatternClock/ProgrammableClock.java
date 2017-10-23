@@ -8,7 +8,7 @@ import java.time.LocalTime;
 
 /**
  * SEIS 770 – Object Oriented Patterns & Architecture
- * State Pattern Clock: Heather Mortenson | Ross Weinstein
+ * State Pattern Clock: Heather Mortensen | Ross Weinstein
  */
 
 public class ProgrammableClock extends Clock implements StateClock {
